@@ -1,0 +1,12 @@
+@import '../../node_modules/bulma/bulma.sass';
+@import "../../node_modules/bulma/bulma.sass";
+
+
+body {
+  background: url('../images/pexels-photo-531880.jpeg') no-repeat center center;
+}
+
+body, html, #root {
+  height: 100%;
+}
+

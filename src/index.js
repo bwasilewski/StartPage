@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import dotenv from 'dotenv'
 // import './index.css'
+import './scss/Main.scss'
 import App from './App.jsx'
 import * as serviceWorker from './serviceWorker'
-import '../node_modules/bulma/bulma.sass'
 
 dotenv.config()
 
