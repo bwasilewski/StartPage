@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header'
+import Welcome from './components/Welcome'
 import { Container, Title } from 'bloomer'
 
 function App() {
@@ -10,12 +11,10 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
-      <Container>
-        <Title isSize="1">Welcome, Ben!</Title>
-      </Container>
-    </div>
+      <Welcome />
+    </>
   )
 }
 
