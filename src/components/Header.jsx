@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { 
+  Container,
   Navbar,
   NavbarItem,
   NavbarBrand,
@@ -20,9 +21,7 @@ const Header = () => {
 
   const handleWeather = response => {
     setWeather(response)
-    console.log('Weather Response: ', response)
   }
-
 
   const handleLocation = response => {
     setLocation(response.coords)
@@ -40,22 +39,25 @@ const Header = () => {
 
   return (
     <Navbar>
+      <Container>
       <NavbarBrand>
         <NavbarItem>{ dateStr }</NavbarItem>
       </NavbarBrand>
       <NavbarMenu>
         <NavbarStart>
           <NavbarItem hasDropdown isHoverable>
-            <NavbarItem>Apps</NavbarItem>
+            <NavbarItem>Torrents</NavbarItem>
             <NavbarDropdown>
-              <NavbarItem href="https://192.168.1.12:9090">sabNZBD</NavbarItem>
-              <NavbarItem href="http://192.168.1.12:5050">CouchPotato</NavbarItem>
-              <NavbarItem href="http://192.168.1.12:8989">Sonarr</NavbarItem>
-              <NavbarItem href="http://192.168.1.12:8112">Deluge</NavbarItem>
-              <NavbarItem href=""></NavbarItem>
-              <NavbarItem href=""></NavbarItem>
-            </NavbarDropdown>  
+              <NavbarItem href="https://iptorrents.com">IPTorrents</NavbarItem>
+              <NavbarItem href="https://drunkenslug.com">Drunken Slug</NavbarItem>
+              <NavbarItem href="https://dognzb.cr">DogNZB</NavbarItem>
+              <NavbarItem href="https://nzbgeek.info">NZBGeek</NavbarItem>
+            </NavbarDropdown>
           </NavbarItem>
+          <NavbarItem href="https://192.168.1.12:9090">sabNZBD</NavbarItem>
+          <NavbarItem href="http://192.168.1.12:5050">CouchPotato</NavbarItem>
+          <NavbarItem href="http://192.168.1.12:8989">Sonarr</NavbarItem>
+          <NavbarItem href="http://192.168.1.12:8112">Deluge</NavbarItem>
         </NavbarStart>
         <NavbarEnd>
           { weather !== null && (
@@ -66,6 +68,7 @@ const Header = () => {
           )}
         </NavbarEnd>
       </NavbarMenu>
+      </Container>
     </Navbar>
   )
 }
