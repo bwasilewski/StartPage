@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## TODOs
+1. Daily vim/bash/linux tips
+2. Location and Weather
+3. App Links
+4. HTPC Disk status
+
+
 ## Available Scripts
 
 In the project directory, you can run:
